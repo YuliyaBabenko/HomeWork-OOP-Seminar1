@@ -26,7 +26,7 @@ public class Cat {
     }
     
     public String voice() {
-        return this.model + " " + this.name + " урчит"
+        return this.model + " " + this.name + " урчит";
     }
     
     public String agression() {
