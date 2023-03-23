@@ -34,6 +34,6 @@ public class Cat {
     }
     
     public String askForFood() {
-        return this.name + " смотрит голодными глазами."
+        return this.name + " смотрит голодными глазами.";
     }
 }
