@@ -7,23 +7,12 @@ public class Main {
         Person ivan = new Person("Ваня", 9);
         GeoTree gt = new GeoTree();
 
-        // irene.getFullName();
-        // irene.getAge();
-        // vasil.getFullName();
-        // vasil.getAge();
-        // marie.getFullName();
-        // marie.getAge();
-        // jane.getFullName();
-        // jane.getAge();
-        // ivan.getFullName();
-        // ivan.getAge();
-
-        gt.appendKids(irene, vasil);
-        gt.appendKids(irene, marie);
-        gt.appendBro(marie, vasil);
-        gt.appendKids(vasil, jane);
-        gt.appendKids(vasil, ivan);
-        gt.appendBro(jane, ivan);
+        gt.appendRelative(irene, vasil, Relationship.parent);
+        gt.appendRelative(irene, marie, Relationship.parent);
+        gt.appendRelative(marie, vasil, Relationship.sister);
+        gt.appendRelative(vasil, jane, Relationship.parent);
+        gt.appendRelative(vasil, ivan, Relationship.parent);
+        gt.appendRelative(jane, ivan, Relationship.sister);
 
         System.out.println(new Reserch(gt).getRelatives(irene, Relationship.parent));
         System.out.println(new Reserch(gt).getRelatives(marie, Relationship.sister));
