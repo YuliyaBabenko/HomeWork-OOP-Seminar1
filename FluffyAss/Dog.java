@@ -22,7 +22,7 @@ public class Dog extends Animal implements Voice, Hungry, Agression, Game{
     }
 
     @Override
-    public void play() {
+    public void playWithHuman() {
         System.out.println("Собака ловит палку.");;
     }
 

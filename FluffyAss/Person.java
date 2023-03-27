@@ -1,6 +1,6 @@
 package FluffyAss;
 
-public class Person {
+public class Person implements Action{
     private String sex;
     private String name;
     
@@ -24,16 +24,25 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-    
-    public String pet() {
-        return this.sex + " гладит питомца.";
+ 
+    @Override
+    public void feedAnimal(Animal animal) {
+        System.out.println(this.name + " накладывает питомцу еду.");
     }
-    
-    public String agression() {
-        return this.name + " ругаекется и кричит на питомца.";
+
+    @Override
+    public void screamAtAnimal(Animal animal) {
+        System.out.println(this.name + " ругается и кричит на питомца.");
     }
-    
-    public String feedCat() {
-        return this.name + " накладывает питомцу еду.";
+
+    @Override
+    public void petAnimal(Animal animal) {
+        System.out.println(this.sex + " гладит питомца.");;
     }
+
+    @Override
+    public void playWithAnimal(Animal animal) {
+        System.out.println(this.name + " играет с питомцем.");;
+    }
+
 }

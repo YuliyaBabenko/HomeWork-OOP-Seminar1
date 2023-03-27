@@ -6,17 +6,18 @@ public class Main {
         Dog dog = new Dog("Бобик", "Пёс", 2);
         Person man = new Person("Мужчина", "Иннокентий");
         
-        System.out.println(man.pet());
+        man.petAnimal(cat);
         cat.voice();
         dog.voice();
-        System.out.println(man.agression());
+        man.screamAtAnimal(dog);
         cat.agress();
         dog.agress();
+        man.feedAnimal(cat);
         cat.askForFood();
         dog.askForFood();
-        System.out.println(man.feedCat());
-        cat.play();
-        dog.play();
+        man.playWithAnimal(dog);
+        cat.playWithHuman();
+        dog.playWithHuman();
 
     }
 }

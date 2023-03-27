@@ -22,7 +22,7 @@ public class Cat extends Animal implements Voice, Hungry, Agression, Game{
     }
 
     @Override
-    public void play() {
+    public void playWithHuman() {
         System.out.println("Кот гоняет клубок шерсти.");;
     }
 
