@@ -1,39 +1,30 @@
 package FluffyAss;
 
-public class Cat {
-    private String model;
-    private String ears;
-    
-    public Cat(String model, String name) {
-        this.model = model;
-        this.name = name;
+public class Cat extends Animal implements Voice, Hungry, Agression, Game{
+
+    public Cat(String name, String model, Integer age) {
+        super(name, model, age);
+    }
+
+    @Override
+    public void voice() {
+        System.out.println("Кот мяукает.");
     }
     
-    public String getModel() {
-        return model;
+    @Override
+    public void askForFood() {
+        System.out.println("Кот смотрит голодными глазами.");
     }
-    
-    public String getName() {
-        return name;
+
+    @Override
+    public void agress() {
+        System.out.println("Кот шипит.");
     }
-    
-    public void setModel(String model) {
-        this.model = model;
+
+    @Override
+    public void play() {
+        System.out.println("Кот гоняет клубок шерсти.");;
     }
-    
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    public String voice() {
-        return this.model + " " + this.name + " урчит";
-    }
-    
-    public String agression() {
-        return this.name + " шипит, кусается, царапается.";
-    }
-    
-    public String askForFood() {
-        return this.name + " смотрит голодными глазами.";
-    }
+
+
 }

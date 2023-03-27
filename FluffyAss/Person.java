@@ -26,14 +26,14 @@ public class Person {
     }
     
     public String pet() {
-        return this.sex + " " + this.name + " гладит котика.";
+        return this.sex + " гладит питомца.";
     }
     
     public String agression() {
-        return this.name + " ругаекется и кричит на кота.";
+        return this.name + " ругаекется и кричит на питомца.";
     }
     
     public String feedCat() {
-        return this.name + " накладывает котику еду.";
+        return this.name + " накладывает питомцу еду.";
     }
 }
