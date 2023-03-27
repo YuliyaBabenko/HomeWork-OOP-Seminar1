@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import javax.management.relation.Relation;
-
 public class Reserch {
     ArrayList<String> result = new ArrayList<>();
     ArrayList<Node> tree;
@@ -19,11 +17,4 @@ public class Reserch {
         return result;
     }
 
-    public void getRelation(Person per1, Person per2) {
-        for (Node tr : tree) {
-            if (tr.p1.getFullName() == per1.getFullName() && tr.p2.getFullName() == per2.getFullName()) {
-                System.out.println(Relation);
-            }
-        }
-    }
 }
