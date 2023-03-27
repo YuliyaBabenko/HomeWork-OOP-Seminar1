@@ -1,6 +1,6 @@
 package Narnia;
 
-public class Person {
+public class Person implements Action{
     private String name;
 
     public Person(String name) {
@@ -11,7 +11,7 @@ public class Person {
         return name;
     }
 
-    public void setName() {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -20,15 +20,19 @@ public class Person {
         return name;
     }
 
-    public String open() {
-        return this.name + " opens a wardrobe.";
+    @Override
+    public void openWardrobe() {
+        System.out.println(this.name + " opens the wardrobe.");;
     }
 
-    public String curious() {
-        return this.name + " looks inside the wardrobe";
+    @Override
+    public void hideInWardrobe() {
+        System.out.println(this.name + " hides inside the wardrobe.");;
     }
 
-    public String scream() {
-        return this.name + " is so excited and happy!";
+    @Override
+    public void cleanWardrobe() {
+        System.out.println(this.name + " cleans the wardrobe.");;
     }
+
 }
