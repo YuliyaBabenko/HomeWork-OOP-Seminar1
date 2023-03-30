@@ -22,5 +22,9 @@ public class Person {
     public void setAge(Integer age) {
         this.age = age;
     }
-
+    
+    @Override
+    public int compareTo(Person per) {
+        return this.age - per.age
+    }
 }
