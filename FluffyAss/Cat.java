@@ -1,6 +1,6 @@
 package FluffyAss;
 
-public class Cat extends Animal implements Voice, Hungry, Agression, Game{
+public class Cat extends Animal implements Voice, Hungry, Agression, Game, Fight{
 
     public Cat(String name, String model, Integer age) {
         super(name, model, age);
@@ -25,6 +25,10 @@ public class Cat extends Animal implements Voice, Hungry, Agression, Game{
     public void playWithHuman(Person per) {
         System.out.println("Кот играет с " + per.getFullName);
     }
-
+    
+    @Override
+    public void fightWith(Animal animal) {
+        System.out.println("Кот дерётся с " + animal);
+    }
 
 }
