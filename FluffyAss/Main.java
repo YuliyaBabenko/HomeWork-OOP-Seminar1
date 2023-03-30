@@ -18,6 +18,8 @@ public class Main {
         man.playWithAnimal(dog);
         cat.playWithHuman(man);
         dog.playWithHuman(man);
+        cat.fightWith(dog);
+        dog.fightWith(cat);
 
     }
 }
