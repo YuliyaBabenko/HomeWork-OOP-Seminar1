@@ -13,11 +13,11 @@ public class Main {
         cat.agress();
         dog.agress();
         man.feedAnimal(cat);
-        cat.askForFood();
-        dog.askForFood();
+        cat.askForFood(man);
+        dog.askForFood(man);
         man.playWithAnimal(dog);
-        cat.playWithHuman();
-        dog.playWithHuman();
+        cat.playWithHuman(man);
+        dog.playWithHuman(man);
 
     }
 }
