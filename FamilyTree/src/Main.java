@@ -18,6 +18,9 @@ public class Main {
         System.out.println(new Reserch(gt).getRelatives(marie, Relationship.sister));
         System.out.println(new Reserch(gt).getRelatives(ivan, Relationship.brother));
         System.out.println(new Reserch(gt).getRelatives(vasil, Relationship.parent));
+        
+        System.out.println(findOldest(vasil, marie));
+        System.out.println(findOldest(ivan, irene));
     }
 
 }
