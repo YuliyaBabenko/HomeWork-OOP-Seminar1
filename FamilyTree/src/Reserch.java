@@ -16,5 +16,14 @@ public class Reserch {
         }
         return result;
     }
-
+    
+    public findOldest(Person per1, Person per2) {
+        if (per1.compareTo(per2) > 0) {
+            return per1 + " старше " + per2;
+        } else if (per1.compareTo(per2) < 0) {
+            return per2 + " старше " + per1;
+        } else {
+            return per2 + " и " + per1 + " - ровесники.";
+        }
+    }
 }
